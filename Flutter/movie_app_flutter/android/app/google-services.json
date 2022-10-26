@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1008897003976",
+    "project_id": "movie-app-rushil",
+    "storage_bucket": "movie-app-rushil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008897003976:android:9f3c204122310258b230fd",
+        "android_client_info": {
+          "package_name": "com.example.movie_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008897003976-mr59q3ne14tf2gaheq6ig18n8usl9mfq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW_UuT9ZbGS5Ov-6Cq-HZNr1hTQHpXuYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1008897003976-mr59q3ne14tf2gaheq6ig18n8usl9mfq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
