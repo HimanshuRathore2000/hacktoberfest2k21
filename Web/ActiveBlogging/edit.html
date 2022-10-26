@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="edit.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+    <header>
+
+        <ul class="list">
+            <li class="list-contents"><a class="list-links" href="edit.html">Contact Us</a></li>
+            <li class="list-contents"><a class="list-links" href="Blogs.html">Blogs</a></li>
+            <li class="list-contents"><a class="list-links" href="home.html">Home</a></li>
+
+            <li class="Logo"><img class="logo" src="logo.jpg"></img> </li>
+        </ul>
+    </header>
+
+
+    <div class="aaa">>
+        <a href="#" class="previous "> Dashboard</a>
+        <a href="#" class="next ">Log out </a>
+    </div>
+
+
+    <article class="contactbox">
+        <img src="4.jpg" class="icon"><br>
+        <h1>Edit</h1><br>
+        <form action="/edit/{{ sno }}" method="POST">
+            <p>Title</p>
+            <input type="text" name="title" placeholder="enter your name">
+            <p>Text</p>
+            <textarea input type="text" rows="10" cols="42" name="textarea" placeholder="type your message here"> </textarea> <br>
+            <p>Author</p> 
+            <input type="text" name="author" placeholder="type your message here"><br>
+             <p>Slug</p>
+            <input type="text" name="slug" placeholder="type your message here"><br> 
+            <p>Image File</p>
+            <input type="text" name="img_file" placeholder="type your message here"><br>
+            <input type="submit" name="" value="Send"><br><br>
+
+
+        </form>
+    </article>
+
+
+
+    <footer class="footer">
+        <div class="main-content">
+            <div class="left box">
+                <h2>About Us</h2>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, necessitatibus! Provident, placeat
+                        et nesciunt nobis dolorum tempora laudantium repudiandae necessitatibus beatae, suscipit optio
+                        doloribus obcaecati doloremque, iure laboriosam amet voluptatibus?</p>
+                    <div class="social">
+                        <a href="#"><span class="fab fa-facebook-f"></span></a>
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                        <a href="#"><span class="fab fa-instagram"></span></a>
+                        <a href="#"><span class="fab fa-youtube"></span></a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="center box">
+                <h2>Address</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">9301 Roberts Street
+                            Duvernay-Est, QC H7A 2M7</span>
+                    </div>
+
+                    <div class="phone">
+                        <span class="fas fa-phone"></span>
+                        <span class="text">425-785-5798</span>
+                    </div>
+
+                    <div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">pappuIsCute@email.com</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
