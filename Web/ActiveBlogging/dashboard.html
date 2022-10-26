@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>home</title>
+    <link rel="stylesheet" type="text/css" href=  "dashboard.css" >
+   
+    
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+
+    <header>
+
+  <ul class="list">
+
+  <li class="list-contents"><a class="list-links" href="Contact.html">Contact Us</a></li>
+  <li class="list-contents"><a class="list-links" href="Blogs.html">Blogs!!</a></li>
+  <li class="list-contents"><a class="list-links" href="home.html">Home</a></li>
+
+  <li class="Logo"><img class="logo" src="logo.jpg"></img> </li>
+  </ul>
+</header>
+
+<article class="heading">
+  <h1>Admin Panel</h1>
+  </article>
+
+  <div class="bbb">>
+    <a href="#" class="previous ">Add new post</a>
+    <a href="#" class="next ">Log Out</a>
+  </div>
+
+
+<table class="container">
+    <thead >
+      <tr>
+        <th>Sno</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Date</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody  >
+      {% for blog in blogs %}
+      
+      <tr class="table-items">
+        <td>{{ blog.sno }}</td>
+        <td>{{ blog.author }}</td>
+        <td>{{ blog.title }}</td>
+        <td>{{ blog.date }}</td>
+        <td ><button  class ="table-btn" type="" name="button">Edit</button></td>
+        <td ><button class ="table-btn"  type="" name="button">Delete</button></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+ <form class="U-butn">
+  <p class ="upload">
+  <h1 class="f-h">Upload a file</h1> <br>
+    <input class = "browse" type="file" name="datafile" size="40">
+    <button class="upload-submit" type="" name="button">Submit</button>
+  </p>
+  </form>
+
+
+
+<div class="aaa">>
+<a href="#" class="previous ">&laquo; Previous</a>
+<a href="#" class="next ">Next &raquo;</a>
+</div>
+
+  
+
+
+<footer class="footer">
+  <div class="main-content">
+    <div class ="left box">
+      <h2>About Us</h2>
+      <div class = "content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, necessitatibus! Provident, placeat et nesciunt nobis dolorum tempora laudantium repudiandae necessitatibus beatae, suscipit optio doloribus obcaecati doloremque, iure laboriosam amet voluptatibus?</p>
+      <div class="social">
+        <a href="#"><span class="fab fa-facebook-f"></span></a>
+        <a href="#"><span class="fab fa-twitter"></span></a>
+        <a href="#"><span class="fab fa-instagram"></span></a>
+        <a href="#"><span class="fab fa-youtube"></span></a>
+
+      </div>
+      </div>
+    </div>
+
+    <div class="center box">
+      <h2>Address</h2>
+      <div class="content">
+        <div class="place">
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="text">9301 Roberts Street
+          Duvernay-Est, QC H7A 2M7</span>
+        </div>
+
+        <div class="phone">
+          <span class="fas fa-phone"></span>
+          <span class="text">425-785-5798</span>
+          </div>
+
+          <div class="email">
+            <span class="fas fa-envelope"></span>
+            <span class="text">XYZABC@email.com</span>
+            </div>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+  </body>
+</html>
